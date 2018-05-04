@@ -31,8 +31,8 @@ SITE_LIST = {
 # HTTP_STATUS_CODE
 HTTP_STATUS_CODE = {
     200: ("OK", "Request was successful"),
-    201: ("Created" "The request has been fulfilled, resulting in the creation"
-          " of a new resource"),
+    201: ("Created", "The request has been fulfilled, resulting in the "
+          "creation of a new resource"),
     202: ("Accepted", "The request has been accepted for processing, but the "
           "processing has not been completed."),
     204: ("No Content", "The server successfully processed the request and is "
