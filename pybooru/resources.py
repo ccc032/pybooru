@@ -49,6 +49,7 @@ HTTP_STATUS_CODE = {
     423: ("Already Exists", "Resource already exists"),
     424: ("Invalid Parameters", "The given parameters were invalid"),
     429: ("User Throttled", "User is throttled, try again later"),
-    500: ("Internal Server Error", "Some unknown error occurred on the server"),
+    500: ("Internal Server Error",
+          "A database timeout, or some unknown error occurred on the server"),
     503: ("Service Unavailable", "Server cannot currently handle the request")
     }
