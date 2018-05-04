@@ -5,9 +5,9 @@
 This module contains all resources for Pybooru.
 
 SITE_LIST (dict):
-    Is a dict that contains various based Moebooru, default sites.
+    Is a dict that contains various Moebooru and Danbooru-based default sites.
 HTTP_STATUS_CODE (dict):
-    Is a dict that contains the http status code for Moebooru API.
+    Is a dict that contains http status codes for Moebooru and Danbooru API.
 """
 
 
@@ -41,12 +41,14 @@ HTTP_STATUS_CODE = {
     401: ("Unauthorized", "Authentication is required and has failed or has "
           "not yet been provided."),
     403: ("Forbidden", "Access denied"),
+    410: ("Gone", "Pagination limit"),
     404: ("Not Found", "Not found"),
     420: ("Invalid Record", "Record could not be saved"),
     421: ("User Throttled", "User is throttled, try again later"),
     422: ("Locked", "The resource is locked and cannot be modified"),
     423: ("Already Exists", "Resource already exists"),
     424: ("Invalid Parameters", "The given parameters were invalid"),
+    429: ("User Throttled", "User is throttled, try again later"),
     500: ("Internal Server Error", "Some unknown error occurred on the server"),
     503: ("Service Unavailable", "Server cannot currently handle the request")
     }
